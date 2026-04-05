@@ -19,6 +19,9 @@ export class WebTableFunctionality {
   async ReadDataFromTable(){
 const tableData: string[][] = [];
 
+await this.table.waitFor({ state: 'visible' });
+
+
     await this.table.scrollIntoViewIfNeeded()
 
     const rows =  this.table.locator('tbody tr')
