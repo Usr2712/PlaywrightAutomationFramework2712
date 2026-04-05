@@ -27,7 +27,9 @@ export default defineConfig({
     video: 'retain-on-failure',
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
-    permissions: ['geolocation']
+    permissions: ['geolocation'],
+    actionTimeout: 60000, // 60s
+
   },
 
   projects: [
