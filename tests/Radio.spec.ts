@@ -1,7 +1,7 @@
 import { test, expect } from '../utils/hooks';
 import { radioFunctionality } from '../pages/Radio';
 
-test('Radio Btn1 Functionality Check', async ({ page }) => {
+test('Radio Btn1 Functionality Check @sanity', async ({ page }) => {
   const radioFun = new radioFunctionality(page);
 
   await radioFun.selectRadio('radio1');
