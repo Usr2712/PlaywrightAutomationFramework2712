@@ -1,5 +1,5 @@
 import { test as base } from '@playwright/test';
-import { TestConfig } from '../../PlaywrightAutomationFramework2712/test.config'
+import { TestConfig } from '../utils/test.config'
 
 export const test = base.extend({
   // you can add fixtures here if needed
