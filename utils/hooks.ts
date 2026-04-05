@@ -1,5 +1,5 @@
 import { test as base } from '@playwright/test';
-import { TestConfig } from '../../Playwright-Ifx/test.config'
+import { TestConfig } from '../../PlaywrightAutomationFramework2712/test.config'
 
 export const test = base.extend({
   // you can add fixtures here if needed
@@ -8,8 +8,7 @@ export const test = base.extend({
 test.beforeEach(async ({ page }) => {
   console.log('Running before each test');
 
-  console.log(process.env.URL)
-  console.log(process.env.MESSAGE)
+
 
   let config: TestConfig = new TestConfig();
   await page.goto(config.appUrl);
